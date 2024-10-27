@@ -1,0 +1,204 @@
+:root{
+    --white:#FFFFFF;
+    --Stone_100:#F3E6D8 ;
+    --Stone_150:#E4DED8 ;
+    --Stone_600:#5F574E ;
+    --Stone_900:#302D2C ;
+    --Brown:#854632;
+    --rose_800:#7B284F;
+    --rose_50:#FFF5FA;
+    --font_size:16px;
+}
+
+@font-face {
+    font-family: outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: young-serif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: var(--Stone_100);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container{
+    width: 1000px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    margin-top: 4.5rem;
+}
+
+.img_cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.img_cont img{
+    width: 100%;
+    border-radius: 40px;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+.parent_cont{
+    padding: 2rem;
+    font-family: Outfit;
+}
+
+.parent_cont h1{
+    font-family:Young-Serif;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.parent_cont p{
+    padding-bottom: 1rem;
+    /* font-size: 16px; */
+    line-height: 20px;
+    margin-right: 1rem;
+    
+}
+
+.time_cont{
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    background-color: var(--rose_50);
+    border-radius: 10px;
+}
+
+.time_cont h4{
+    color: var(--rose_800);
+}
+
+.time_cont ul{
+    padding-left: 1.8rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+
+h3{
+    color: var(--Brown);
+    font-family: Young-Serif;
+    font-weight: 400;
+    padding-top: 1.5rem;
+}
+.ingredients_cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ingredients_cont ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1.5rem;
+}
+
+.line_beetwen_ing_inst{
+    width: 100%;
+    height: 0.1px;
+    background-color: var(--Stone_600);
+}
+
+.instructions_cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.instructions_cont ol{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1.5rem;
+}
+
+.Nutrition_cont{
+    width: 100%;
+    height: auto;
+}
+
+.Nutrition_cont p{
+    padding-top: 10px;
+}
+
+.table_cont{
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.table_cont table{
+    width: 100%;
+    height: auto;
+}
+
+.table_cont table tr{
+    
+    width: 100%;
+    display: flex;
+    gap: 35%;
+    padding: 10px;
+    border-bottom: 1px solid var(--Stone_600);
+}
+
+.table_cont table tr td{
+    text-align: start;
+    width: 0%;
+}
+
+
+.color_td{
+    color: var(--Brown);
+}
+
+.attribution{
+    font-size: 16px;
+    margin-bottom: 3vh;
+}
+
+
+@media screen and (max-width: 375px) {
+    .container{
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+
+    .img_cont{
+        width: 100%;
+        border-radius: 0px;
+    }
+    
+    .img_cont img{
+        width: 100%;
+        border-radius: 0px;
+        padding: 0px;
+    }
+ 
+}
